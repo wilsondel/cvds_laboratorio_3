@@ -2,7 +2,7 @@ package edu.eci.cvds.tdd.registry;
 
 import edu.eci.cvds.Person;
 import edu.eci.cvds.RegisterResult;
-import edu.eci.cvds.Registry;
+import edu.eci.cvds.tdd.registry.Registry;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,4 +1,7 @@
-package edu.eci.cvds;
+package edu.eci.cvds.tdd.registry;
+
+import edu.eci.cvds.Person;
+import edu.eci.cvds.RegisterResult;
 
 import java.util.ArrayList;
 

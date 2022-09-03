@@ -1,6 +1,20 @@
 # Laboratorio 3 CVDS
 **Nombre:** Wilson Alirio Delgado Hernandez
 
+## Ejercicio "Registraduría"
+Las clases de equivalencia son:
+
+**Edad**
+
+**VALID**: [0,90]
+**UNDERAGE** [1,17]
+**INVALID_AGE** (-∞,0]
+**DEAD** [90,∞)
+
+
+
+## Ejercicio "Descuento de tarifas"
+
 
 **1.** De acuerdo con lo indicado, y teniendo en cuenta que NO hay precondiciones, en qué casos se debería arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la especificación.\
 Se debería arrojar una excepción cuando se tiene tarifaBase,diasAntelacion y edad como valores negativos. 
