@@ -22,7 +22,6 @@ public class Registry {
         }
 
         people.add(p);
-        // TODO Validate person and return real result.
         return RegisterResult.VALID;
     }
 

@@ -37,9 +37,9 @@ public class RegistryTest {
     @Test
     public void givenAPersonWhenIsOver90ThenDEAD() {
         Person person = new Person();
-        person.setAge(-50);
+        person.setAge(190);
         RegisterResult result = registry.registerVoter(person);
-        Assert.assertEquals(RegisterResult.INVALID_AGE, result);
+        Assert.assertEquals(RegisterResult.DEAD, result);
     }
 
 
@@ -53,8 +53,6 @@ public class RegistryTest {
         RegisterResult result = registry.registerVoter(person2);
         Assert.assertEquals(RegisterResult.DUPLICATED, result);
     }
-
-    // TODO Complete with more test cases
 
 
 }
