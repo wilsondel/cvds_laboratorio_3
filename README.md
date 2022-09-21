@@ -39,13 +39,13 @@ public long calculoTarifa(long tarifaBase, int diasAntelacion, int edad)
 
 | Número | Clase de equivalencia (en lenguaje natural o matemático) | Resultado correcto / incorrecto |
 | -- | -- | -- |
-| -15 | **tarifaBase** < 0, *conjunto: (-∞, 0)* | Incorrecto por precio negativo |
-| 50 | **tarifaBase** >= 0, *conjunto: [0, ∞)* | Correcto por precio válido |
-| -30 | **diasAntelacion** < 0, *conjunto: (-∞, 0)* | Incorrecto por valor de días de antelación negativo |
-| 40 | **díasAntelacion** ≥ 0, *conjunto: [0, ∞)*| Correcto por valor de días de antelación válido |
-| 50 | 0 <= **edad** <= 130, *conjunto: [0,130]* | Correcto por edad válida |
-| -90 | **edad** < 0 , *conjunto: (-∞, 0)* | Incorrecto por edad inválida |
-| 180 | **edad** > 130, *conjunto: (130, ∞)* | Incorrecto por edad inválida |
+| 1 | **tarifaBase** < 0, **edad** < 0, **diasAntelacion** < 0 | Incorrecto por precio, días antelación,edad negativo |
+| 2 | **tarifaBase** >= 0, **díasAntelacion** ≥ 0, 0 <= **edad** <= 130 | Correcto por precio, días antelación,edad válido |
+| 3 | **tarifaBase** >= 0, **díasAntelacion** < 0, 0 <= **edad** <= 130 | Incorrecto por valor de días de antelación negativo |
+| 4 | **tarifaBase** >= 0, **díasAntelacion** >= 0, **edad** < 0 | Incorrecto por valor de edad negativo |
+| 5 | **tarifaBase** < 0, **díasAntelacion** < 0, 0 <= **edad** <= 130 |  Incorrecto por valor de tarifa negativo |
+| 6 | **tarifaBase** >= 0, **díasAntelacion** >= 0, edad > 130 | Incorrecto por edad inválida |
+
 
 
 **3.** Para cada clase de equivalencia, defina un caso de prueba específico, definiendo: parámetros de entrada y resultados esperados.
