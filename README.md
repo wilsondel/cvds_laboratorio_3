@@ -43,8 +43,8 @@ public long calculoTarifa(long tarifaBase, int diasAntelacion, int edad)
 | 2 | **tarifaBase** >= 0, **díasAntelacion** ≥ 0, 0 <= **edad** <= 130 | Correcto por precio, días antelación,edad válido |
 | 3 | **tarifaBase** >= 0, **díasAntelacion** < 0, 0 <= **edad** <= 130 | Incorrecto por valor de días de antelación negativo |
 | 4 | **tarifaBase** >= 0, **díasAntelacion** >= 0, **edad** < 0 | Incorrecto por valor de edad negativo |
-| 5 | **tarifaBase** < 0, **díasAntelacion** < 0, 0 <= **edad** <= 130 |  Incorrecto por valor de tarifa negativo |
-| 6 | **tarifaBase** >= 0, **díasAntelacion** >= 0, edad > 130 | Incorrecto por edad inválida |
+| 5 | **tarifaBase** < 0, **díasAntelacion** >= 0, 0 <= **edad** <= 130 |  Incorrecto por valor de tarifa negativo |
+| 6 | **tarifaBase** >= 0, **díasAntelacion** >= 0, **edad** > 130 | Incorrecto por edad inválida |
 
 
 
